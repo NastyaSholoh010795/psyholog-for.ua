@@ -1,0 +1,38 @@
+
+
+
+/*Start Header Styles*/
+header {
+    z-index: 3;
+}
+.main-header-bg{
+    background: rgba(0,0,0,.3);!important;
+    height: 135px;
+
+}
+
+/*Start Font for logo*/
+
+@font-face{
+    font-family: "SegoePrintRegular";
+    src: url("../css/font-for-logo/SegoePrintRegular.eot");
+    src: url("../css/font-for-logo/SegoePrintRegular.eot?#iefix")format("embedded-opentype"),
+    url("../css/font-for-logo/SegoePrintRegular.woff") format("woff"),
+    url("../css/font-for-logo/SegoePrintRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.logo-wrapper > .caption-logo-orange{
+    font-family: 'SegoePrintRegular';
+    font-weight: bold;
+    font-size: 18px;
+    color: #ff8a00;
+}
+
+section.offset-top{
+    padding-top: 0;
+}
+/*End Font for logo*/
+/*Start Header Styles*/
+

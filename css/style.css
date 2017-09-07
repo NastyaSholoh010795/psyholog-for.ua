@@ -1,0 +1,189 @@
+/* ---------------------------------------- Start common classes  -------------------------------------- */
+
+.text-orange{
+    color: #ff8a00;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.next-par{
+    padding-top: 20px;
+}
+
+
+
+
+.info-box{
+    padding-top: 30px;
+    width: 100%;
+}
+
+.heading-info-box{
+    padding-bottom: 20px;
+}
+/* ---------------------------------------- End common classes  -------------------------------------- */
+
+
+
+/*---------------------------------------- Start Main Page ------------------------------------------------ */
+
+.bg-owl{
+    background: url(../img/owl-bg.jpg) no-repeat -38px 3px;
+    width: 100%;
+    height: 615px;
+}
+
+.quote-wrapper{
+    position: absolute;
+    top: 300px;
+    right: 200px;
+    width: 480px;
+    background: rgba(0,0,0,.3);
+    z-index: 3;
+    text-align: center;
+}
+
+.text-quote{
+    color: #fff;
+    font-style: italic;
+    font-size: 26px;
+    padding: 20px 20px;
+}
+
+.caption-quote{
+    color: #fff;
+    padding: 0 20px 20px;
+    font-style: italic;
+}
+
+.why-psy{
+    padding-top: 30px;
+    width: 100%;
+}
+
+.why-psy-text{
+    padding-left: 30px;
+    width: 712px;
+}
+
+.stage-work-heading{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.stage-work{
+    width: 400px;
+    height: 150px;
+    background: #cdcdcd;
+    border-radius: 5px;
+}
+
+.first-stage, .second-stage, .third-stage, .fourth-stage{
+    padding-left: 10px;
+}
+
+.number > p{
+    font-size: 160px;
+    line-height: 155px;
+}
+
+.stage-text-block{
+    padding: 20px 20px 0 90px;
+}
+
+.stage-text-block-heading{
+    margin-bottom: 10px;
+}
+
+.arrow-right{
+    font-size: 120px;
+    padding-left: 65px;
+    color: #818181;
+}
+
+.stage-offset{
+    margin-top: 20px;
+}
+
+.btn-wrapper{
+    text-align: center;
+    margin: 30px 0;
+
+}
+
+.btn{
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 1.25;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    padding: 15px 30px 15px 30px;
+    transition: all .2s ease-in-out;
+}
+
+.btn-primary{
+    font-size: 18px;
+    color: #fff;
+    background-color: #45a1ea;
+    box-shadow: 0 6px  0 0 #337fbb;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    color: #e1e1e1;
+    background-color: #3e95d6;
+}
+/*---------------------------------------- End Main page--------------------------------------------*/
+
+/*----------------------------------------Start About me--------------------------------------------*/
+.about-me-text{
+    width: 610px;
+    padding-left: 30px;
+}
+
+.name-psyholog{
+    padding-top: 5px;
+}
+
+.line{
+    margin: 3px 5px;
+    display: inline-block;
+    width: 32px;
+    height: 1px;
+    background: #acaeae;
+}
+
+.my-education{
+    margin: 30px 0 50px;
+    width: 100%;
+}
+
+.column{
+    width: 30%;
+    margin-right: 5%;
+}
+
+.column:last-child{
+    margin-right: 0;
+}
+
+.about-cert{
+    padding-top: 10px;
+}
+
+
+.read-more{
+    color:  #45a1ea;
+}
+
+.read-more:hover{
+    text-decoration: underline;
+}
+
+/*----------------------------------------End About me--------------------------------------------*/
+
+

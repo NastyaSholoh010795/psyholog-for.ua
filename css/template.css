@@ -1,0 +1,264 @@
+
+/* ---------------------------------------- Start default styles  -------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+header, footer{
+    font-size: 12px;
+    color: #e8e5e5;
+}
+
+section{
+    font-size: 14px;
+    color: #333333;
+}
+
+a{
+    text-decoration: none;
+    color: #e8e5e5;
+}
+
+li{
+    list-style-type: none;
+}
+
+h3{
+    font-size: 24px
+}
+
+h4{
+    font-size: 20px;
+}
+
+p{
+    font-size: 14px;
+    line-height: 1.3;
+}
+/* ---------------------------------------- End set default styles  -------------------------------------- */
+
+
+/* ----------------------------------------Start Header Styles -------------------------------------- */
+header{
+    width: 100%;
+    height: 170px;
+    position: absolute;
+}
+
+.upper-strip{
+    height: 35px;
+    background: #333333;
+}
+
+.name-wrapper, .tell-wrapper{
+    padding: 10px 0;
+}
+
+.main-header{
+    background: #ff8a00;
+    height: 135px;
+}
+
+.logo-wrapper{
+  padding-top: 10px;
+}
+
+.logo-wrapper > a{
+    display: block;
+}
+
+.logo-wrapper > a > img{
+    width: 80px;
+    height: 80px;
+    padding-left: 25px;
+    box-sizing: content-box;
+}
+
+.logo-wrapper > .caption-logo{
+    font-family: 'SegoePrintRegular', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #3a3232;
+}
+
+.menu-wrapper > ul.menu{
+    position: relative;
+    top: 105px;
+}
+
+.menu-wrapper > ul > li{
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.menu-wrapper > ul > li:last-child{
+    padding-right: 0;
+}
+
+.menu-wrapper > ul > li > a{
+    font-size: 18px;
+}
+.menu-wrapper > ul > li > a:hover{
+    color: #f7cd9c;
+    border-bottom: 2px solid #45a1ea;
+}
+
+.menu-wrapper .active{
+    border-bottom: 2px solid #45a1ea;
+}
+
+/* ---------------------------------------- End Header styles  -------------------------------------- */
+
+
+/* ---------------------------------------- Start Content styles  -------------------------------------- */
+section{
+    padding-bottom: 300px;
+    padding-top: 170px;
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+.content-wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+/* ---------------------------------------- End Content styles  -------------------------------------- */
+
+
+/* ---------------------------------------- Start Footer styles  -------------------------------------- */
+body,
+html {
+    height: 100%;
+}
+
+
+footer {
+    width:100%;
+    height: 300px;
+    margin-top: -300px;
+}
+
+.main-footer{
+    position: relative;
+    background: #333333;
+    padding: 25px 0 10px 0;
+    height: 265px;
+    font-size: 14px;
+}
+
+.info-footer{
+    height: 150px;
+}
+
+.info-footer h3{
+    font-size: 18px;
+    border-bottom: 2px solid #45a1ea;
+}
+
+.info-footer ul{
+    padding-top: 10px;
+}
+
+.info-footer li{
+    line-height: 18px;
+}
+
+.about-site, .menu-footer, .contacts-footer {
+    width: 33.33333333%;
+}
+
+.menu-footer .align-center-box{
+    margin: 0 auto;
+    text-align: left;
+    width: 100px
+}
+
+.menu-footer ul > li{
+    list-style: disc inside;
+}
+
+.menu-footer ul > li:hover{
+    text-decoration: underline;
+}
+
+.main-footer .active{
+    color: #f7cd9c;
+}
+
+.social-footer{
+    height: 80px;
+}
+
+.social{
+    padding-top: 30px;
+}
+
+.social a{
+    display: inline;
+    padding: 10px 0 0 10px;
+}
+
+.logo-orange-wrapper{
+    position: relative;
+    bottom: 5px;
+    right: 50px;
+}
+
+.logo-wrapper > a{
+    display: block;
+}
+
+.logo-orange-wrapper > a > img{
+    width: 80px;
+}
+
+.lower-strip{
+    background: #ff8a00;
+    height: 35px;
+    text-align: center;
+}
+
+.copyright-wrapper{
+    padding: 10px 0;
+}
+/* ---------------------------------------- End Footer styles  -------------------------------------- */
+
+
+/* ---------------------------------------- Start common classes  -------------------------------------- */
+.pull-left{
+    float: left;!important;
+}
+
+.pull-right{
+    float: right;!important;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+/* ---------------------------------------- End common classes  -------------------------------------- */
+
+
+/* ----------------------------------------Start Font for logo -------------------------------------- */
+@font-face{
+    font-family: "SegoePrintRegular";
+    src: url("../css/font-for-logo/SegoePrintRegular.eot");
+    src: url("../css/font-for-logo/SegoePrintRegular.eot?#iefix")format("embedded-opentype"),
+    url("../css/font-for-logo/SegoePrintRegular.woff") format("woff"),
+    url("../css/font-for-logo/SegoePrintRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* ----------------------------------------End Font for logo -------------------------------------- */
