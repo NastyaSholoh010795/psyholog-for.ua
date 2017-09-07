@@ -63,6 +63,11 @@
     width: 100%;
 }
 
+.img-why-psy-wrapper > img{
+    height: 230px;
+}
+
+
 .why-psy-text{
     padding-left: 30px;
     width: 712px;
@@ -140,13 +145,13 @@
 /*---------------------------------------- End Main page--------------------------------------------*/
 
 /*----------------------------------------Start About me--------------------------------------------*/
+.photo-psy-wrapper > img{
+    height: 200px;
+}
+
 .about-me-text{
     width: 610px;
     padding-left: 30px;
-}
-
-.name-psyholog{
-    padding-top: 5px;
 }
 
 .line{
