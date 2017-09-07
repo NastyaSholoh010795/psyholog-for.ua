@@ -24,6 +24,12 @@
     padding: 0 0 20px;
     text-align: center;
 }
+
+.crop-text{
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    text-overflow: ellipsis;
+}
 /* ---------------------------------------- End common classes  -------------------------------------- */
 
 
@@ -191,10 +197,86 @@
 }
 
 /*----------------------------------------End About me--------------------------------------------*/
-/*----------------------------------------Start Publication--------------------------------------------*/
-/*.main-article{*/
-    /*padding: 30px 0;*/
-/*}*/
+
+/*----------------------------------------Start Publication--------------------------------------*/
+.main-article{
+    border-bottom: 1px solid #45a1ea;
+    padding: 20px 0;
+
+}
+
+.img-article-wrapper > img{
+    width: 100%;
+}
+
+.img-title-wrapper{
+    position: relative;
+    margin-top: -50px;
+    padding: 10px;
+    color: #ffffff;
+    background: rgba(0,0,0,.6);
+    z-index: 3;
+}
+
+
+.img-title-wrapper:hover{
+    height: 98px;
+    margin-top: -100px;
+    cursor: pointer;
+}
+
+.img-title{
+    font-weight: normal;
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    text-overflow: ellipsis;
+}
+
+.img-title:hover{
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+}
+
+.interest-articles{
+    margin:20px 0 30px ;
+}
+
+.articles-row{
+    margin-bottom: 20px;
+}
+
+
+.pagination > li{
+    display: inline-block;
+
+}
+
+a.page-link{
+    border-radius: 5px;
+    position: relative;
+    display: block;
+    padding: 7px 12px;
+    line-height: 1.25;
+    color: #ffffff;
+    background: #45a1ea;
+}
+
+a.page-link:hover{
+    background: #74b8ea;
+}
+
+.pagination .active{
+    color: #45a1ea;
+    background: transparent;
+    border: 1px solid #45a1ea;
+}
+
+.pagination .active:hover{
+    background: none;
+}
+
+
 
 
 
