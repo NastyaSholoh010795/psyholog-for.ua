@@ -132,7 +132,6 @@
     text-align: center;
     vertical-align: middle;
     border: 1px solid transparent;
-    border-radius: 1px;
     padding: 15px 30px 15px 30px;
     transition: all .2s ease-in-out;
 }
@@ -147,7 +146,7 @@
 .btn-primary:hover {
     cursor: pointer;
     color: #e1e1e1;
-    background-color: #3e95d6;
+    background-color: #3c84c3;
 }
 /*---------------------------------------- End Main page--------------------------------------------*/
 
@@ -275,6 +274,129 @@ a.page-link:hover{
 .pagination .active:hover{
     background: none;
 }
+
+/*----------------------------------------End Publication--------------------------------------*/
+
+/*----------------------------------------Start Form--------------------------------------*/
+
+form label,form span{
+    font-size: 16px;
+}
+.form-wrapper{
+    margin: 50px auto;
+    width: 400px;
+    height: 600px;
+    z-index: 5;
+    border: 1px solid #a7a7a7;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 54px rgba(0,0,0,.75);
+}
+
+form{
+    height: 100%;
+    position: relative;
+}
+
+.header-form{
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    background: #ff8a00;
+    color: #ffffff;
+}
+
+.body-form{
+    margin: 20px 40px;
+}
+
+input:not([type="radio"]),input:not([type="submit"]){
+    font-size: 16px;
+    border: none;
+}
+
+input:not([type="radio"]):hover,:focus{
+    outline: none;
+}
+
+input[type="text"],input[type="tel"],textarea{
+    padding: 10px 0 0 10px;
+}
+
+.bg-input{
+    background: #d3d3d3;
+    border-radius: 5px 0 0 5px;
+}
+
+
+.bg-input .fa{
+    color: #362f2d;
+    padding: 11px 20px;
+    font-size: 20px;
+}
+
+.input-name,.input-surname,.input-tel{
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    border: 1px solid #a7a7a7;
+}
+
+.sex{
+    margin-bottom: 20px;
+}
+
+.sex > label, .textarea > label{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.input-men, .input-women{
+    margin-bottom: 5px;
+}
+
+
+textarea{
+    font-size: 16px;
+    width: 100%;
+    height: 80px;
+    resize: vertical;
+    border-radius: 5px;
+    border: 1px solid #a7a7a7;
+
+}
+
+.footer-form{
+    border-radius: 0 0 5px 5px;
+    height: 96px;
+    background: #d3d3d3;
+    color: #ffffff;
+
+}
+
+.footer-form > .body-form{
+    padding: 28px;
+}
+
+.btn-footer-wrapper > input[type=submit]{
+    padding: 15px 40px;
+    margin: 24px 40px;
+    width: 318px;
+}
+
+/*************************************** End Form ****************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
