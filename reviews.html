@@ -1,10 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Psyholog for you</title>
+
+    <!--favicon-->
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon-logo.ico">
+    <link rel="SHORTCUT ICON" href="img/favicon-logo.ico">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--End Styles -->
+
 </head>
 <body>
 
+<!-- Start Header-->
+<header>
+    <div class="upper-strip">
+        <div class="content-wrapper">
+            <div class="name-wrapper pull-left">
+                <span>Шолох Елена, частный психолог</span>
+            </div>
+            <div class="tell-wrapper pull-right">
+                <span><i class="fa fa-phone"></i> +38 068 334 75 70</span>
+            </div>
+        </div>
+    </div>
+    <div class="main-header">
+        <div class="content-wrapper">
+            <div class="logo-wrapper pull-left">
+                <a href="about-me.html">
+                    <img src="img/logo-header.png" alt="logo">
+                </a>
+                <p class="caption-logo">psyholog-for.ua</p>
+            </div>
+            <div class="menu-wrapper pull-right">
+                <ul class="menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about-me.html" >Обо мне</a></li>
+                    <li><a href="publications.html">Публикации</a></li>
+                    <li><a href="my-services.html">Мои услуги</a></li>
+                    <li><a href="reviews.html" class="active">Отзывы</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End Header-->
+
+<!-- Start Content-->
+<section>
+    <div class="content-wrapper">
+        <div class="oll-reviews">
+            <h3 class="title-info-box">Отзывы</h3>
+            <!--Start Review 1-->
+            <div class="review-wrapper">
+                <div class="review clearfix">
+                    <div class="photo-user-wrapper pull-left">
+                        <img src="img/rewievs-1.png" alt="photo-user">
+                    </div>
+                    <div class="text-review pull-left">
+                        <p class="name-user">София</p>
+                        <p class="user-comment">Я была на приеме несколько раз, сначало я очень боялась придти.
+                            Я пришла с острой проблемой в отношениях на первую встречу с Еленой,
+                            она помогла мне не просто с ней справиться, а ощутить свою явность и ясность. Даже не подозревала,
+                            что могут происходить такие необыкновенные, неожиданные изменения в сознании человека. Мне было очень
+                            уютно и комфортно находиться в компании этого человека. Записивайтесь на приемы, это лучший
+                            специалист которого я знаю!!!
+                        </p>
+                        <p class="date-reviews pull-right">12.04.17</p>
+                    </div>
+                </div>
+            </div>
+            <!--End Review 1-->
+            <!--Start Review 2-->
+            <div class="review-wrapper">
+                <div class="review clearfix">
+                    <div class="photo-user-wrapper pull-left">
+                        <img src="img/rewievs-2.png" alt="photo-user">
+                    </div>
+                    <div class="text-review pull-left">
+                        <p class="name-user">Анатолий</p>
+                        <p class="user-comment">Огромное спасибо за профессионализм и индивидуальный подход!Мне очень приятно
+                            было общаться, с одной строны очень жень что все подходит к концу.
+                            Мне будет очень не хватать нашич розговоров.Отдельно хочу отметить эффективные методики, которые
+                            были даны в ходе консультаций для проработки каждой ситуации. Это позволило взглянуть по-новому
+                            на события, которые уже происходят и улучшить качество жизни, а также
+                            восприятие самых разных ситуаций. Жду с нетерпением каждой новой встречи!
+                        </p>
+                        <p class="date-reviews pull-right">05.12.17</p>
+                    </div>
+                </div>
+            </div>
+            <!--End Review 2-->
+            <!--Start Review 3-->
+            <div class="review-wrapper">
+                <div class="review clearfix">
+                    <div class="photo-user-wrapper pull-left">
+                        <img src="img/rewievs-3.png" alt="photo-user">
+                    </div>
+                    <div class="text-review pull-left">
+                        <p class="name-user">Ирина</p>
+                        <p class="user-comment">Хочу ещё раз поблагодарить Елену за работу! Вчера пробовали побороть
+                            страх отсутствия денег, который сильно мешал и постоянно заставлял переживать.
+                            Буквально за полчаса мы всё сделали! Конечно, немножко я устала, но это было круто)))
+                            Облегчение до сих пор, как вспомню нашу работу - так и улыбка лезет сама. Получается это всего
+                            лишь вторая встреча за четыре месяца работы, но зато какие это были четыре месяца.
+                            Благодарю за сотрудничество,до скорой встречи!
+                        </p>
+                        <p class="date-reviews pull-right">01.07.17</p>
+                    </div>
+                </div>
+            </div>
+            <!--End Review 3-->
+        </div>
+        <div class="leave-review">
+            <h3 class="align-center border">Оставьте ваш отзыв</h3>
+            <div class="form-review clearfix">
+                <form action="#" method="post" class="pull-left">
+                    <label for="name">Введите ваше имя</label>
+                    <div class="input-name">
+                        <input type="text" id="name">
+                    </div>
+                    <label for="file">Загрузите фото:</label>
+                    <div class="input-name">
+                        <input type="file" id="file">
+                    </div>
+                    <label for="file">Оставьте комментарий:</label>
+                    <texarea>
+
+                    </texarea>
+                    <div class="btn-wrapper">
+                        <input type="submit" value="Отправить комментарий">
+                    </div>
+                </form>
+                <div class="fa-comments-wrapper pull-left">
+                    <p class="fa fa-comment-o"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Content-->
+
+<!-- Start Footer-->
+<footer>
+    <div class="main-footer">
+        <div class="content-wrapper">
+            <div class="info-footer">
+                <div class="about-site pull-left">
+                    <div class="pull-left">
+                        <h3>О сайте</h3>
+                        <ul>
+                            <li>На этом сайте не</li>
+                            <li>только статьи о</li>
+                            <li>психологии, я буду</li>
+                            <li>иногда писать о том,</li>
+                            <li>что очень важно и</li>
+                            <li>что значимо в жизни</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-footer pull-left">
+                    <div class="align-center-box">
+                        <h3>Меню</h3>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="about-me.html">Обо мне</a></li>
+                            <li><a href="publications.html">Публикации</a></li>
+                            <li><a href="my-services.html">Мои услуги</a></li>
+                            <li><a href="reviews.html" class="active">Отзывы</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts-footer pull-right">
+                    <div class="pull-right">
+                        <h3>Контакты</h3>
+                        <ul>
+                            <li><i class="fa fa-phone"></i> +38 068 334 75 70</li>
+                            <li><i class="fa fa-pencil-square-o"></i> ela.hidi@gmail.com</li>
+                            <li><i class="fa fa-home"></i>г.Звенигородка <br /> ул.Пушкина 32</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="social-footer">
+                <div class="social pull-left">
+                    <span>Присоединяйся:</span>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-vk"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="logo-orange-wrapper pull-right">
+                    <a href="index.html">
+                        <img src="img/logo-footer.png" alt="logo-footer">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lower-strip">
+        <div class="content-wrapper">
+            <div class="copyright-wrapper">
+                <span class="copyright">&copy; 2017p."Дизайнер Шолох Настя"</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer-->
+
+
+<!--JS script-->
 </body>
 </html>
