@@ -122,24 +122,54 @@
             <h3 class="align-center border">Оставьте ваш отзыв</h3>
             <div class="form-review clearfix">
                 <form action="#" method="post" class="pull-left">
-                    <label for="name">Введите ваше имя</label>
-                    <div class="input-name">
-                        <input type="text" id="name">
+                    <div class="horizontal-form clearfix">
+                        <div class="label-wrapper pull-left">
+                            <label for="name">Введите имя:</label>
+                        </div>
+                        <div class="input-wrapper pull-left">
+                            <input type="text"  id="name">
+                        </div>
                     </div>
-                    <label for="file">Загрузите фото:</label>
-                    <div class="input-name">
-                        <input type="file" id="file">
+                    <div class="horizontal-form clearfix">
+                        <div class="label-wrapper pull-left">
+                            <label for="file">Загрузите фото:</label>
+                        </div>
+                        <div class="input-wrapper file-upload pull-left">
+                            <label class="clearfix">
+                                <input type="file" id="file">
+                                    <span class="attach-photo pull-left">Прикрепите фото ...</span>
+                                    <span class="folder-open pull-right"><i class="fa fa-folder-open"></i></span>
+                            </label>
+                        </div>
+                        <!-- start for JS-->
+                        <!--<input type="text" id="filename" class="filename" disabled>-->
+                        <!--<script>-->
+                            <!--$(document).ready( function() {-->
+                                <!--$(".file-upload input[type=file]").change(function(){-->
+                                    <!--var filename = $(this).val().replace(/.*\\/, "");-->
+                                    <!--$("#filename").val(filename);-->
+                                <!--});-->
+                            <!--});-->
+                        <!--</script>-->
+                        <!-- end for JS-->
                     </div>
-                    <label for="file">Оставьте комментарий:</label>
-                    <texarea>
+                    <div class="horizontal-form clearfix">
+                        <div class="label-wrapper pull-left">
+                            <label for="comment">Ваш комментарий:</label>
+                        </div>
+                        <div class="input-wrapper pull-left">
+                            <textarea name="comment" id="comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="horizontal-form">
+                        <div class="btn-wrapper-hor">
+                            <input  class="btn btn-primary" type="submit" value="Отправить комментарий">
+                        </div>
+                    </div>
 
-                    </texarea>
-                    <div class="btn-wrapper">
-                        <input type="submit" value="Отправить комментарий">
-                    </div>
                 </form>
                 <div class="fa-comments-wrapper pull-left">
-                    <p class="fa fa-comment-o"></p>
+                    <p class="fa fa-comments-o"></p>
                 </div>
             </div>
         </div>

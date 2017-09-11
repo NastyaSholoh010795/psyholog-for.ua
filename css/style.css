@@ -452,27 +452,136 @@ tbody > tr > td:first-child{
     border-radius: 10px;
 }
 
-.text-review{
-    width: 82%;
-}
-
-.name-user, .user-comment{
-    padding: 0 10px 10px
-}
-
 .name-user{
     font-weight: bold;
-    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.user-comment{
+    padding-left: 5px;
+}
+
+.photo-user-wrapper{
+    width: calc(100% - 82%);
+}
+
+.text-review{
+    width: 82%;
 }
 
 .border{
     border-bottom: 1px solid #45a1ea;
 }
 
-.fa-comments-wrapper > .fa{
-    margin-left: 30px;
-    font-size: 173px;
+.leave-review{
+    margin-bottom: 50px;
 }
+
+.form-review > form{
+    margin-top: 30px;
+    width: 60%;
+}
+
+
+.horizontal-form .input-name{
+    border-radius: 5px;
+}
+
+.label-wrapper{
+    width: 35%;
+}
+
+.label-wrapper > label{
+    line-height: 40px;
+}
+
+.input-wrapper{
+    width: 65%;
+}
+
+.input-wrapper > #name , .input-wrapper > #file{
+    width: 100%;
+    border-radius: 5px;
+}
+
+ /*start change input type-file*/
+.file-upload input[type="file"]{
+    display: none;
+}
+
+.file-upload{
+    overflow: hidden;
+    background: #ffffff;
+    color: #a7a7a7;
+    border-radius: 5px;
+    border: 1px solid #a7a7a7;
+}
+
+.file-upload >label{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.attach-photo{
+    display: inline-block;
+    padding: 10px;
+    width: 80%;
+}
+
+.folder-open{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    width: 20%;
+    background: #d3d3d3;
+    border-left: 1px solid #a7a7a7;
+}
+
+folder-open:hover{
+
+}
+
+.folder-open > .fa{
+    color: #333333;
+}
+
+.filename { /* class for Js*/
+    display: none;
+    background: #fff;
+    border: 0;
+}
+ /*end change input type-file*/
+
+
+
+.horizontal-form > .btn-wrapper-hor {
+    margin-top: 0;
+    width: 65%;
+    margin-left: 35%;
+}
+
+.horizontal-form > .btn-wrapper-hor > input[type = "submit"]{
+    padding: 15px 0;
+    border: none;
+    width: 100%;
+}
+
+
+.fa-comments-wrapper{
+    width: 40%;
+    text-align: right;
+    color: #e6e6e6;
+}
+
+.fa-comments-wrapper > .fa{
+    line-height: 260px;
+    font-size: 300px;
+}
+
+/*************************************** End reviews ***************************************/
+
+/*************************************** Start Contacts ***********************************/
 
 
 
