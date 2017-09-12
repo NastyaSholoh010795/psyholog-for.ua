@@ -1,0 +1,64 @@
+
+/*---------------------------------------- Start Style  Main Page ------------------------------------------------ */
+.why-psy{
+    padding-top: 30px;
+    width: 100%;
+}
+
+.why-psy-wrapper{
+    width: 100%;
+}
+
+.img-why-psy-wrapper > img{
+    height: 230px;
+}
+
+.why-psy-text{
+    padding-left: 30px;
+    width: calc(100% - 230px);
+}
+
+.stage-work-heading{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.stage-work{
+    width: 400px;
+    height: 150px;
+    background: #cdcdcd;
+    border-radius: 5px;
+}
+
+.first-stage, .second-stage, .third-stage, .fourth-stage{
+    padding-left: 10px;
+}
+
+.number > p{
+    font-size: 160px;
+    line-height: 155px;
+}
+
+.stage-text-block{
+    padding: 20px 20px 0 90px;
+}
+
+.stage-text-block-heading{
+    margin-bottom: 10px;
+}
+
+.arrow-right{
+    font-size: 120px;
+    padding-left: 65px;
+    color: #818181;
+}
+
+.stage-offset{
+    margin-top: 20px;
+}
+
+.btn-wrapper{
+    text-align: center;
+    margin: 30px 0;
+}
+/* ---------------------------------------- End Style Main Page ------------------------------------------------ */

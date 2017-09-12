@@ -1,0 +1,53 @@
+/*************************************** Start My services ******************************************/
+.my-services{
+    margin: 30px 0;
+}
+
+.column-four{
+    width: 22%;
+    margin-right: 4%;
+}
+
+.column-four:last-child{
+    margin-right: 0;
+}
+
+.text-icon{
+    padding: 10px 0;
+}
+
+.text-icon > h4{
+    padding-bottom: 10px;
+}
+
+.wrapper-icon > img{
+    width: 100%;
+}
+
+.price-list{
+    margin-bottom: 50px;
+}
+
+table{
+    width: 100%;
+}
+
+
+table,tr, th, td{
+    border-collapse: collapse;
+    border:1px solid #dadada;
+}
+
+th,td{
+    padding: 10px 0;
+}
+
+tbody > tr:nth-child(odd){
+    background: #f2f2f2;
+}
+
+tbody > tr > td:first-child{
+    padding-left: 10px;
+}
+
+/*************************************** End My services ******************************************/

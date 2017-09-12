@@ -1,0 +1,107 @@
+
+/* ----------------------------------------Start Header Styles -------------------------------------- */
+header{
+    width: 100%;
+    height: 615px;
+    position: absolute;
+    background: url(../img/owl-bg.jpg) no-repeat -38px 3px;
+}
+
+.upper-strip{
+    height: 35px;
+    background: #333333;
+}
+
+.name-wrapper, .tell-wrapper{
+    padding: 10px 0;
+}
+
+.main-page-header{
+    background: rgba(0,0,0,0.3);
+    height: 135px;
+}
+
+.logo-wrapper{
+    position: relative;
+    top: 10px;
+}
+
+.logo-wrapper > a{
+    display: block;
+}
+
+.logo-wrapper > a > img{
+    width: 80px;
+    height: 80px;
+    padding-left: 25px;
+    box-sizing: content-box;
+}
+
+.menu-wrapper{
+    position: relative;
+    top: 105px;
+}
+
+.menu-wrapper > ul > li{
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.menu-wrapper > ul > li:last-child{
+    padding-right: 0;
+}
+
+.menu-wrapper > ul > li > a{
+    font-size: 18px;
+}
+.menu-wrapper > ul > li > a:hover{
+    color: #f7cd9c;
+    border-bottom: 2px solid #45a1ea;
+}
+
+.menu-wrapper .active{
+    border-bottom: 2px solid #45a1ea;
+}
+
+.quote-box-header{
+    height: 445px;
+}
+
+.quote-wrapper{
+    position: absolute;
+    top: 300px;
+    right: 200px;
+    width: 480px;
+    background: rgba(0,0,0,.3);
+    z-index: 3;
+    text-align: center;
+}
+
+.text-quote{
+    color: #fff;
+    font-style: italic;
+    font-size: 26px;
+    padding: 20px 20px;
+}
+
+.caption-quote{
+    color: #fff;
+    padding: 0 20px 20px;
+    font-style: italic;
+}
+
+section{
+    padding-top: 615px;
+}
+/* ---------------------------------------- End Header Styles  -------------------------------------- */
+
+
+/* ---------------------------------------- Start Font for logo ---------------------------------------- */
+.logo-wrapper > .caption-logo-orange{
+    font-family: 'SegoePrintRegular', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ff8a00;
+}
+/* ---------------------------------------- End Font for logo ---------------------------------------- */
+

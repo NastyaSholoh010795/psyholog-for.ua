@@ -1,0 +1,71 @@
+
+/* ----------------------------------------Start Header Styles -------------------------------------- */
+header{
+    width: 100%;
+    height: 170px;
+    position: absolute;
+}
+
+.upper-strip{
+    height: 35px;
+    background: #333333;
+}
+
+.name-wrapper, .tell-wrapper{
+    padding: 10px 0;
+}
+
+.main-header{
+    background: #ff8a00;
+    height: 135px;
+}
+
+.logo-wrapper{
+    position: relative;
+    top: 10px;
+}
+
+.logo-wrapper > a{
+    display: block;
+}
+
+.logo-wrapper > a > img{
+    width: 80px;
+    height: 80px;
+    padding-left: 25px;
+    box-sizing: content-box;
+}
+
+.logo-wrapper > .caption-logo{
+    font-family: 'SegoePrintRegular', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #3a3232;
+}
+
+.menu-wrapper{
+    position: relative;
+    top: 105px;
+}
+
+.menu-wrapper > ul > li{
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.menu-wrapper > ul > li:last-child{
+    padding-right: 0;
+}
+
+.menu-wrapper > ul > li > a{
+    font-size: 18px;
+}
+.menu-wrapper > ul > li > a:hover{
+    color: #f7cd9c;
+    border-bottom: 2px solid #45a1ea;
+}
+
+.menu-wrapper .active{
+    border-bottom: 2px solid #45a1ea;
+}
+/* ---------------------------------------- End Header styles  -------------------------------------- */
