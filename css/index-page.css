@@ -24,7 +24,7 @@
 }
 
 .stage-work{
-    width: 400px;
+    width: 42%;
     height: 150px;
     background: #cdcdcd;
     border-radius: 5px;
@@ -32,6 +32,7 @@
 
 .first-stage, .second-stage, .third-stage, .fourth-stage{
     padding-left: 10px;
+    height: 100%;
 }
 
 .number > p{
@@ -47,9 +48,14 @@
     margin-bottom: 10px;
 }
 
+.arrow-right-wrapper{
+    height: 150px;
+    text-align: center;
+    width: 16%;
+}
+
 .arrow-right{
     font-size: 120px;
-    padding-left: 65px;
     color: #818181;
 }
 

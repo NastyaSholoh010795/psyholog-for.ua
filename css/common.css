@@ -108,6 +108,7 @@ section{
 .btn{
     display: inline-block;
     text-transform: uppercase;
+    border-radius: 5px;
     line-height: 1.25;
     text-align: center;
     vertical-align: middle;
@@ -170,6 +171,14 @@ input:not([type="radio"]),input:not([type="submit"]),textarea{
 
 input:not([type="radio"]):hover,:focus{
     outline: none;
+}
+
+input::-webkit-input-placeholder {
+    color: #a7a7a7;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #a7a7a7;
 }
 
 .input-wrapper,.radio-wrapper{

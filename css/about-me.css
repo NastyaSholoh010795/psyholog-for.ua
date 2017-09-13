@@ -34,6 +34,10 @@
     padding-top: 10px;
 }
 
+.about-cert > h4{
+    padding-bottom: 10px;
+}
+
 .read-more{
     color:  #45a1ea;
 }

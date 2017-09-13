@@ -1,5 +1,5 @@
 /*-------------------------------- Star reviews -----------------------------------------------------*/
-.oll-reviews{
+.all-reviews{
     margin-top: 30px;
 }
 
@@ -31,6 +31,7 @@
 
 .border{
     border-bottom: 1px solid #45a1ea;
+    padding-bottom: 20px;
 }
 
 .leave-review{
@@ -48,15 +49,19 @@
 }
 
 .label-wrapper{
-    width: 35%;
+    width: 30%;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 10px;
 }
 
 .label-wrapper > label{
-    line-height: 40px;
+    color: #868181;
+    font-size: 16px;
 }
 
 .horizontal-form > .input-wrapper{
-    width: 65%;
+    width: 70%;
 }
 
 .input-wrapper > #name , .input-wrapper > #file{
@@ -113,8 +118,8 @@
 
 .horizontal-form > .btn-wrapper-hor {
     margin-top: 0;
-    width: 65%;
-    margin-left: 35%;
+    width: 70%;
+    margin-left: 30%;
 }
 
 .horizontal-form > .btn-wrapper-hor > input[type = "submit"]{

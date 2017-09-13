@@ -60,42 +60,62 @@
         <div class="content-wrapper">
             <div class="form-wrapper">
                 <div class="form-header">
-                    <h3 class="align-center">Ваши дание</h3>
+                    <div class="content-form">
+                        <h3 class="align-center">Ваши дание</h3>
+                    </div>
                 </div>
-                <div class="form-body">
-                    <form action="#" method="post">
-                        <div class="input-wrapper clearfix">
-                            <span class="add-on pull-left"><i class="fa fa-user"></i></span>
-                            <input type="text" class="pull-left input-name" placeholder="Ваше имя...">
-                        </div>
-                        <div class="input-wrapper clearfix">
-                            <span class="add-on pull-left"><i class="fa fa-clipboard"></i></span>
-                            <input type="text" class="pull-left input-surname" placeholder="Ваша фамилия...">
-                        </div>
-                        <div class="input-wrapper clearfix">
-                            <span class="add-on pull-left"><i class="fa fa-phone"></i></span>
-                            <input type="tel" class="pull-left input-tel" placeholder="Ваше телефон...">
-                        </div>
+                <form action="#" method="post">
+                    <div class="content-form">
+                        <div class="form-body">
+                            <div class="input-wrapper clearfix">
+                                <span class="add-on pull-left"><i class="fa fa-user"></i></span>
+                                <input type="text" class="pull-left input-name" placeholder="Ваше имя...">
+                            </div>
+                            <div class="input-wrapper clearfix">
+                                <span class="add-on pull-left"><i class="fa fa-clipboard"></i></span>
+                                <input type="text" class="pull-left input-surname" placeholder="Ваша фамилия...">
+                            </div>
+                            <div class="input-wrapper clearfix">
+                                <span class="add-on pull-left"><i class="fa fa-phone"></i></span>
+                                <input type="tel" class="pull-left input-tel" placeholder="Ваше телефон...">
+                            </div>
 
-                        <div class="radio-wrapper">
-                            <label>Укажите ваш пол:</label>
-                            <div class="man">
-                                <input type="radio" name="sex"  value="men" title="men">
-                                <span>мужской</span>
+                            <div class="radio-wrapper">
+                                <label>Укажите ваш пол:</label>
+                                <div class="man">
+                                    <input type="radio" name="sex"  value="men" title="men">
+                                    <span>мужской</span>
+                                </div>
+                                <div class="woman">
+                                    <input type="radio" name="sex" value="women" title="women">
+                                    <span>женский</span>
+                                </div>
                             </div>
-                            <div class="woman">
-                                <input type="radio" name="sex" value="women" title="women">
-                                <span>женский</span>
+                            <div class="comments">
+                                <label for="textarea">Коротко опишите вашу проблему:</label>
+                                <textarea name="textarea" id="textarea" placeholder="Оставьте коментарий..."></textarea>
                             </div>
                         </div>
-                        <div class="comments">
-                            <label for="textarea">Коротко опишите вашу проблему:</label>
-                            <textarea name="textarea" id="textarea" placeholder="Оставьте коментарий..."></textarea>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
                 <div class="form-footer">
-                    <input type="submit" class="btn btn-primary" value="Отправить заявку">
+                    <div class="content-form">
+                        <input type="submit" class="btn btn-primary" value="Отправить заявку">
+                    </div>
+                </div>
+            </div>
+
+            <div class="success-window-wrapper">
+                <div class="success-window">
+                    <div class="success-header"></div>
+                    <div class="success-body clearfix">
+                        <div class="check pull-left"><i class="fa fa-check"></i></div>
+                        <div class="success-text pull-right">
+                            <h2 class="thank">Спасибо!</h2>
+                            <p class="send-request">Ваша заявка отправлена</p>
+                        </div>
+                    </div>
+                    <div class="success-footer"></div>
                 </div>
             </div>
         </div>

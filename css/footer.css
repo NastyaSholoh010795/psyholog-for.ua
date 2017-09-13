@@ -23,8 +23,8 @@ footer {
     height: 150px;
 }
 
-.info-footer h3{
-    font-size: 18px;
+.info-footer h4{
+    text-align: center;
     border-bottom: 2px solid #45a1ea;
 }
 
