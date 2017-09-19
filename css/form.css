@@ -2,18 +2,17 @@
 
 .form-wrapper{
     position: relative;
-    width:50%;
+    width:100%;
     border-left: 1px solid #a7a7a7;
     border-right: 1px solid #a7a7a7;
     border-radius: 10px;
-    margin:40px auto;
     background: #ffffff;
     box-shadow:  5px 5px 54px rgba(0,0,0,.75);
 }
 
 .form-header{
     width: 100%;
-    height: 70px;
+    height: 50px;
     position: absolute;
     top: 0;
     left: 0;
@@ -24,10 +23,9 @@
 
 form{
     box-sizing: border-box;
-    padding-top: 70px;
-    padding-bottom: 120px;
+    padding-top: 50px;
+    padding-bottom: 90px;
     min-height: 100%;
-
 }
 
 .content-form{
@@ -36,16 +34,21 @@ form{
     margin: 0 auto;
 }
 
-.content-form > h3{
-    padding-top: 21px;
+.content-form > h4{
+    padding-top: 13px;
 }
 
 .form-body{
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
-.input-wrapper,.radio-wrapper{
+.input-wrapper{
+    position: relative;
     margin-bottom: 20px;
+}
+
+.radio-wrapper{
+    margin-bottom: 15px;
 }
 
 .add-on{
@@ -61,7 +64,7 @@ form{
 .add-on > .fa{
     color: #362f2d;
     text-align: center;
-    padding: 9px 20px;
+    padding: 8px 16px;
     font-size: 20px;
 }
 
@@ -85,13 +88,13 @@ form{
 
 .comments > label{
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .form-footer{
     width: 100%;
-    margin-top: -120px;
-    height: 120px;
+    margin-top: -90px;
+    height: 90px;
     background: #d3d3d3;
     border-radius: 0 0 10px 10px;
     border-top: 1px solid #a7a7a7;
@@ -100,12 +103,44 @@ form{
 
 
 .content-form >input[type=submit]{
-    margin: 35px 0;
+    margin: 20px 0;
     padding: 15px 0;
     border:none;
     color: #ffffff;
     width: 100%;
 }
+
+/*start class for Js*/
+
+.validate-input{
+    display: inline-block;
+}
+
+.validate-input > li{
+    font-size: 12px;
+    padding-top: 5px;
+    color: #ff0000;
+}
+
+.completed-success{
+    color: #218837;
+    position: absolute;
+    display: inline;
+    float: right;
+    right: 10px;
+    top: 10px;
+}
+
+.completed-error{
+    color: #ff0000;
+    position: absolute;
+    display: inline;
+    float: right;
+    right: 10px;
+    top: 10px;
+}
+
+
 
 /*-------------------------------------------- End Form ---------------------------------------------*/
 /*-------------------------------------------- Start success-window---------------------------------*/
@@ -115,7 +150,7 @@ form{
 
 .success-window{
     position: relative;
-    width: 50%;
+    width: 100%;
     border-left: 1px solid #a7a7a7;
     border-right: 1px solid #a7a7a7;
     border-radius: 10px;
@@ -144,17 +179,16 @@ form{
 }
 
 .check{
+    padding: 30px;
     width: 30%;
-    text-align: center;
 }
 
 .check > .fa{
-    padding-top: 22px;
     font-size: 80px;
 }
 
 .success-text{
-    margin: 30px 0;
+    margin: 35px 0;
     width: 70%;
 }
 
@@ -164,7 +198,7 @@ form{
 }
 
 .send-request{
-    padding-top: 10px;
+    padding-top: 15px;
     font-size: 18px;
 }
 
@@ -175,4 +209,54 @@ form{
     background: #d3d3d3;
     border-radius: 0 0 10px 10px;
     border-bottom: 1px solid #a7a7a7;
+}
+
+/*start class for Js*/
+.modal-form {
+    width: 32%;
+    position: fixed;
+    bottom: 20%;
+    left: 35%;
+    opacity: 0;
+    z-index: 5;
+}
+
+.modal-close{
+    border-radius: 50%;
+    background: rgb(255, 106, 0);
+    border: 2px solid rgba(245, 227, 12, 0.3);
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    top: -7px;
+    right: -5px;
+    z-index: 5;
+
+}
+.modal-close > .fa{
+    padding: 1px 4px;
+    font-size: 18px;
+    color: #d3d3d3;
+    cursor: pointer;
+}
+.overlay {
+    z-index:3;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.8);
+    cursor:pointer;
+}
+
+.overlay > .fa-refresh.fa-spin {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    color: #ffffff;
+    font-size: 30px;
 }

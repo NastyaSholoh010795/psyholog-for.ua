@@ -36,7 +36,15 @@
 
 .about-cert > h4{
     padding-bottom: 10px;
+    text-align: center;
 }
+
+.about-cert > p{
+    height: 35px;
+    overflow: hidden;
+}
+
+
 
 .read-more{
     color:  #45a1ea;

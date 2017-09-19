@@ -9,9 +9,11 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/plugins/iCheck/skins/all.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index-header.css">
     <link rel="stylesheet" href="css/index-page.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/footer.css">
     <!--End Styles -->
 </head>
@@ -198,9 +200,89 @@
             <!-- End stage-work block-->
 
             <div class="btn-wrapper">
-                <button type="button" class="btn btn-primary">Записаться на прием</button>
+                <button type="button"  class="btn btn-primary modal-show">Записаться на прием</button>
             </div>
         </div>
+
+        <div class="modal-form invisible">
+            <span class="modal-close">
+                <i class="fa fa-close"></i>
+            </span>
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <div class="content-form">
+                        <h4 class="align-center">Ваши дание</h4>
+                    </div>
+                </div>
+                <form action="#" method="post">
+                    <div class="content-form">
+                        <div class="form-body">
+                            <div class="input-wrapper clearfix">
+                                <span class="add-on pull-left"><i class="fa fa-user"></i></span>
+                                <input type="text" name="name" class="pull-left input-name" placeholder="Ваше имя...">
+                                <i class="fa fa-check success-check invisible"></i>
+                                <i class="fa fa-close error-close invisible"></i>
+                                <ul class="errors invisible"></ul>
+                            </div>
+                            <div class="input-wrapper clearfix">
+                                <span class="add-on pull-left"><i class="fa fa-clipboard"></i></span>
+                                <input type="text" name="surname" class="pull-left input-surname" placeholder="Ваша фамилия...">
+                                <i class="fa fa-check success-check invisible"></i>
+                                <i class="fa fa-close error-close invisible"></i>
+                                <ul class="errors invisible"></ul>
+                            </div>
+                            <div class="input-wrapper clearfix">
+                                <span class="add-on pull-left"><i class="fa fa-phone"></i></span>
+                                <input type="tel" name="tel" class="pull-left input-tel" placeholder="Ваше телефон...">
+                                <i class="fa fa-check success-check invisible"></i>
+                                <i class="fa fa-close error-close invisible"></i>
+                                <ul class="errors invisible"></ul>
+                            </div>
+
+                            <div class="radio-wrapper">
+                                <label>Укажите ваш пол:</label>
+                                <div class="man">
+                                    <input type="radio" class="iCheck" name="sex"  value="men" title="men" checked>
+                                    <span>мужской</span>
+                                </div>
+                                <div class="woman">
+                                    <input type="radio" class="iCheck" name="sex" value="women" title="women">
+                                    <span>женский</span>
+                                </div>
+                                <ul class="errors invisible"></ul>
+                            </div>
+                            <div class="comments">
+                                <label for="textarea">Коротко опишите вашу проблему:</label>
+                                <textarea name="textarea" id="textarea" placeholder="Оставьте коментарий..."></textarea>
+                                <ul class="errors invisible"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="form-footer">
+                    <div class="content-form">
+                        <input type="submit" class="btn btn-primary send" value="Отправить заявку">
+                    </div>
+                </div>
+            </div>
+            <div class="success-window-wrapper invisible">
+                <div class="success-window">
+                    <div class="success-header"></div>
+                    <div class="success-body clearfix">
+                        <div class="check pull-left">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <div class="success-text pull-right">
+                            <h2 class="thank">Спасибо!</h2>
+                            <p class="send-request">Ваша заявка отправлена</p>
+                        </div>
+                    </div>
+                    <div class="success-footer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay invisible"></div>
+
     </section>
     <!-- End Content-->
 
@@ -272,5 +354,9 @@
     <!-- End Footer-->
 
     <!--JS script-->
+    <script src="js/plugins/jQuery/jquery-3.1.1.min.js"></script>
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <script src="js/install-plugin-iCheck.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

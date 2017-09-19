@@ -81,6 +81,11 @@ section{
     color: #ff8a00;
 }
 
+.green-text{
+    padding-left: 10px;
+    color: #218837;
+}
+
 .align-center{
     text-align: center;
 }
@@ -160,11 +165,11 @@ textarea{
 }
 
 form label,form span{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 input:not([type="radio"]),input:not([type="submit"]),textarea{
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px;
     border: 1px solid #a7a7a7;
 }
@@ -186,6 +191,14 @@ textarea::-webkit-input-placeholder {
 }
 
     /*--------------End form styles----------*/
+
+.invisible{
+    display: none;
+}
+
+.full-text{
+    height: 100% !important;
+}
 
 /* ---------------------------------------- End common classes  -------------------------------------- */
 

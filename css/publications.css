@@ -5,11 +5,16 @@
 
 }
 
+.main-article > .info-box > p ,.interest-articles .article-text-wrapper > p{
+    height: 108px;
+    overflow: hidden;
+}
+
 .img-article-wrapper > img, .articles-row > .column > img{
     width: 100%;
 }
 
-.img-title-wrapper{
+.art-title-wrapper{
     position: relative;
     margin-top: -50px;
     padding: 10px;
@@ -18,25 +23,27 @@
     z-index: 3;
 }
 
+.art-title{
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
-.img-title-wrapper:hover{
+/*start class for JS*/
+.full-title-wrapper{
     height: 98px;
     margin-top: -100px;
     cursor: pointer;
 }
 
-.img-title{
-    font-weight: normal;
-    white-space: nowrap; /* Отменяем перенос текста */
-    overflow: hidden; /* Обрезаем содержимое */
-    text-overflow: ellipsis;
-}
-
-.img-title:hover{
+.full-title{
     white-space: normal;
     overflow: visible;
     text-overflow: clip;
 }
+
+/*end class for JS*/
 
 .interest-articles{
     margin:20px 0 30px ;
