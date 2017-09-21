@@ -42,11 +42,6 @@ form{
     margin: 20px 0;
 }
 
-.input-wrapper{
-    position: relative;
-    margin-bottom: 20px;
-}
-
 .radio-wrapper{
     margin-bottom: 15px;
 }
@@ -109,38 +104,6 @@ form{
     color: #ffffff;
     width: 100%;
 }
-
-/*start class for Js*/
-
-.validate-input{
-    display: inline-block;
-}
-
-.validate-input > li{
-    font-size: 12px;
-    padding-top: 5px;
-    color: #ff0000;
-}
-
-.completed-success{
-    color: #218837;
-    position: absolute;
-    display: inline;
-    float: right;
-    right: 10px;
-    top: 10px;
-}
-
-.completed-error{
-    color: #ff0000;
-    position: absolute;
-    display: inline;
-    float: right;
-    right: 10px;
-    top: 10px;
-}
-
-
 
 /*-------------------------------------------- End Form ---------------------------------------------*/
 /*-------------------------------------------- Start success-window---------------------------------*/
@@ -239,6 +202,15 @@ form{
     font-size: 18px;
     color: #d3d3d3;
     cursor: pointer;
+}
+
+.modal-form-success{
+    width: 32%;
+    position: fixed;
+    bottom: 20%;
+    left: 35%;
+    opacity: 0;
+    z-index: 5;
 }
 .overlay {
     z-index:3;

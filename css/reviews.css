@@ -23,6 +23,14 @@
 
 .photo-user-wrapper{
     width: calc(100% - 82%);
+
+}
+
+.photo-user-wrapper >img{
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    border: 3px solid #ff8a00;
 }
 
 .text-review{

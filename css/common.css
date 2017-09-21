@@ -190,6 +190,10 @@ textarea::-webkit-input-placeholder {
     margin-bottom: 20px;
 }
 
+.input-wrapper{
+    position: relative;
+}
+
     /*--------------End form styles----------*/
 
 .invisible{
@@ -200,6 +204,37 @@ textarea::-webkit-input-placeholder {
     height: 100% !important;
 }
 
+.disabled{
+    cursor: not-allowed;
+}
+
+.validate-input{
+    display: inline-block;
+}
+
+.validate-input > li{
+    font-size: 12px;
+    padding-top: 5px;
+    color: #ff0000;
+}
+
+.completed-success{
+    color: #218837;
+    position: absolute;
+    display: inline;
+    float: right;
+    right: 10px;
+    top: 10px;
+}
+
+.completed-error{
+    color: #ff0000;
+    position: absolute;
+    display: inline;
+    float: right;
+    right: 10px;
+    top: 10px;
+}
 /* ---------------------------------------- End common classes  -------------------------------------- */
 
 

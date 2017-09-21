@@ -24,15 +24,14 @@ $(document).ready(function () {
 
 
     //START MAIN PAGE
-
-    //Start modal-window
+        //Start modal-window
         $('.modal-show').on('click', function () {
             $('.overlay').fadeIn(400,
                 function () {
                     $('.modal-form').css('display', 'block').animate({opacity: 1, top: '5%'}, 200);
                 });
         });
-        /* Close modal-window */
+            //Close modal-window
         $('.modal-close, .overlay').on('click', function () {
             $('.modal-form').animate({opacity: 0}, 200,
                 function () {
@@ -64,7 +63,6 @@ $(document).ready(function () {
          * @returns {boolean}
          */
         function validationFields(inputs) {
-
             var countError = 0;
             $.each(inputs, function (i, input) {
 
@@ -81,6 +79,7 @@ $(document).ready(function () {
                     input.parent().children('.success-check').addClass('completed-success');
                 }
             });
+
             return !countError;
         }
 
@@ -140,43 +139,37 @@ $(document).ready(function () {
         $('.page-link').on('click',function (e) {
             e.preventDefault();
 
-            var block;
-            var $this;
+            var $this, block;
 
             if($(this).hasClass('page-prev')){
-
                 $this = $(this).closest('.pagination').children('li').children('.active').parent().prev().children();
-
-                if(!$this.hasClass('page-prev')){
-                    block = $($this.data('paginate'));
-
-                    block.siblings().removeClass('pagination-active').addClass('invisible');
-                    block.removeClass('invisible').addClass('pagination-active');
-
-                    $this.parent().siblings().children().removeClass('active');
-                    $this.addClass('active');
-                }
+                block = $this.hasClass('page-prev') ? false: $($this.data('paginate'));
             }else if($(this).hasClass('page-next')){
                 $this = $(this).closest('.pagination').children('li').children('.active').parent().next().children();
-
-                if(!$this.hasClass('page-next')){
-                    block = $($this.data('paginate'));
-
-                    block.siblings().removeClass('pagination-active').addClass('invisible');
-                    block.removeClass('invisible').addClass('pagination-active');
-
-                    $this.parent().siblings().children().removeClass('active');
-                    $this.addClass('active');
-                }
+                block = $this.hasClass('page-next') ? false: $($this.data('paginate'));
             }else{
+                $this = $(this);
                 block = $($(this).data('paginate'));
+            }
 
+            if(block){
                 block.siblings().removeClass('pagination-active').addClass('invisible');
                 block.removeClass('invisible').addClass('pagination-active');
+                $this.parent().siblings().children().removeClass('active');
+                $this.addClass('active');
 
-                $(this).parent().siblings().children().removeClass('active');
-                $(this).addClass('active');
+                if(block.hasClass('art-block-1')){
+                    $('.page-prev').addClass('disabled');
+                    $('.page-next').removeClass('disabled');
+                }else if(block.hasClass('art-block-3')){
+                    $('.page-next').addClass('disabled');
+                    $('.page-prev').removeClass('disabled');
+                }else{
+                    $('.page-prev').removeClass('disabled');
+                    $('.page-next').removeClass('disabled');
+                }
             }
+
         });
         // End pagination
 
@@ -184,10 +177,10 @@ $(document).ready(function () {
 
 
     // START REVIEWS PAGE
-
+        var filename;
         // Start input-file
         $('input[type=file]').change(function () {
-            var filename = $(this).val().replace(/.*\\/, '');
+             filename = $(this).val().replace(/.*\\/, '');
             console.log(filename);
             $('.attach-photo').html(filename);
         });
@@ -197,15 +190,43 @@ $(document).ready(function () {
 
     $('.add-comment').on('click',function (e) {
         e.preventDefault();
-        var nameUser = $('.horizontal-form').find('#name').val();
-        var commentUser = $('.horizontal-form').find('#comment').val();
-        console.log(nameUser);
-        console.log(commentUser);
 
+        var nameUser = $('#name');
+        var userComment = $('#comment');
+
+        if(validationFields([nameUser,userComment])){
+            var reviewWrapper = $('.template-review').clone();
+            var dateReviews = getDate();
+            reviewWrapper.find('.name-user').empty().text(nameUser.val());
+            reviewWrapper.find('.user-comment').empty().text(userComment.val());
+            reviewWrapper.find('.date-reviews').empty().text(dateReviews);
+            reviewWrapper.find('.photo-user-wrapper').children('img').attr('src','');
+            reviewWrapper.removeClass('template-review');
+            $('.all-reviews').append(reviewWrapper);
+        }
     });
 
-        //End add review
+    // getDate
+    function getDate() {
+        var date = new Date();
+        var day = date.getDate();
+        var month = date.getMonth();
+        var year = date.getFullYear();
 
+        if(day.toString().length === 1){
+            day ='0' + day;
+        }
+
+        month ++;
+        if(month.toString().length === 1){
+            month = '0'+ month;
+        }
+
+        return day + '.' + month + '.' + year;
+    }
+
+        //End add review
+    // validation form-review
     // END REVIEWS PAGE
 
 });

@@ -61,7 +61,7 @@
             <div class="all-reviews">
                 <h3 class="title-info-box">Отзывы</h3>
                 <!--Start Review 1-->
-                <div class="review-wrapper">
+                <div class="review-wrapper template-review">
                     <div class="review clearfix">
                         <div class="photo-user-wrapper pull-left">
                             <img src="img/rewievs-1.png" alt="photo-user">
@@ -131,6 +131,9 @@
                             </div>
                             <div class="input-wrapper pull-left">
                                 <input type="text"  id="name" placeholder="Ваше имя ...">
+                                <i class="fa fa-check success-check invisible"></i>
+                                <i class="fa fa-close error-close invisible"></i>
+                                <ul class="errors invisible"></ul>
                             </div>
                         </div>
                         <div class="horizontal-form clearfix">
@@ -151,6 +154,7 @@
                             </div>
                             <div class="input-wrapper pull-left">
                                 <textarea name="comment" id="comment" placeholder="Оставьте комментарий ..."></textarea>
+                                <ul class="errors invisible"></ul>
                             </div>
                         </div>
                         <div class="horizontal-form">
