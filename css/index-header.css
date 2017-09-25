@@ -4,7 +4,7 @@ header{
     width: 100%;
     height: 615px;
     position: absolute;
-    background: url(../img/owl-bg.jpg) no-repeat -38px 3px;
+    background: url(../img/owl-bg.jpg) no-repeat 0 22px;
 }
 
 .upper-strip{
