@@ -123,29 +123,27 @@
             </div>
             <div class="leave-review">
                 <h3 class="align-center border">Оставьте ваш отзыв</h3>
-                <div class="form-review clearfix">
+                <div class="ulogin-wrapper">
+                <p class="text-auh">Прежде чем оставить отзыв,вы должны авторизоваться:</p>
+                    <span class="text-ulogin invisible">Вы можете добавить или изменить даные:</span>
+                    <div class="ulogin invisible" data-ulogin="display=small;theme=flat; fields=first_name,last_name,photo,identity; providers = vkontakte,facebook, google, instagram, twitter,youtube,webmoney; hidden=other;callback=token_js;redirect_uri="></div>
+                </div>
+                <div class="form-review clearfix invisible">
                     <form action="#" method="post" class="pull-left">
                         <div class="horizontal-form clearfix">
                             <div class="label-wrapper pull-left">
-                                <label for="name">Введите имя:</label>
+                                <label for="name">Ваше имя:</label>
                             </div>
                             <div class="input-wrapper pull-left">
-                                <input type="text"  id="name" placeholder="Ваше имя ...">
-                                <i class="fa fa-check success-check invisible"></i>
-                                <i class="fa fa-close error-close invisible"></i>
-                                <ul class="errors invisible"></ul>
+                                <input type="text"  id="name"  readonly>
                             </div>
                         </div>
-                        <div class="horizontal-form clearfix">
+                        <div class="horizontal-form clearfix thumbnail-wrapper">
                             <div class="label-wrapper pull-left">
-                                <label for="file">Загрузите фото:</label>
+                                <label class="our-photo">Ваше фото:</label>
                             </div>
-                            <div class="input-wrapper file-upload pull-left">
-                                <label class="clearfix">
-                                    <input type="file" id="file">
-                                    <span class="attach-photo pull-left">Прикрепите фото ...</span>
-                                    <span class="folder-open pull-right"><i class="fa fa-folder-open"></i></span>
-                                </label>
+                            <div class="input-wrapper  pull-left ">
+                                <img src=""  class="thumbnail-photo">
                             </div>
                         </div>
                         <div class="horizontal-form clearfix">
@@ -242,7 +240,10 @@
 
 <!--JS script-->
 <script src="js/plugins/jQuery/jquery-3.1.1.min.js"></script>
+<script src="js/cookie.js"></script>
 <script src="js/main.js"></script>
+<script src="js/token.js"></script>
+<script src="http://ulogin.ru/js/ulogin.js"></script>
 
 </body>
 </html>

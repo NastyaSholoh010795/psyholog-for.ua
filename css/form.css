@@ -107,10 +107,6 @@ form{
 
 /*-------------------------------------------- End Form ---------------------------------------------*/
 /*-------------------------------------------- Start success-window---------------------------------*/
-
-/*-------------------------------------------- End success-window------------------------------------*/
-
-
 .success-window{
     position: relative;
     width: 100%;
@@ -173,8 +169,8 @@ form{
     border-radius: 0 0 10px 10px;
     border-bottom: 1px solid #a7a7a7;
 }
-
-/*start class for Js*/
+/*-------------------------------------------- End success-window------------------------------------*/
+    /*start class for Js*/
 .modal-form {
     width: 32%;
     position: fixed;
@@ -232,3 +228,4 @@ form{
     color: #ffffff;
     font-size: 30px;
 }
+    /*End class for Js*/

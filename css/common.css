@@ -195,6 +195,7 @@ textarea::-webkit-input-placeholder {
 }
 
     /*--------------End form styles----------*/
+    /*--------------Start for JS styles----------*/
 
 .invisible{
     display: none;
@@ -206,6 +207,11 @@ textarea::-webkit-input-placeholder {
 
 .disabled{
     cursor: not-allowed;
+}
+
+.disabled:hover{
+    cursor: not-allowed;
+
 }
 
 .validate-input{
@@ -235,6 +241,9 @@ textarea::-webkit-input-placeholder {
     right: 10px;
     top: 10px;
 }
+
+    /*--------------End for JS styles----------*/
+
 /* ---------------------------------------- End common classes  -------------------------------------- */
 
 
