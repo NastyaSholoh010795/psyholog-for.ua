@@ -131,9 +131,6 @@ $('.add-comment').on('click',function (e) {
         reviewWrapper.removeClass('template-review');
         $('.all-reviews').append(reviewWrapper);
         userComment.val('');
-        userName.val('');
-        thumbnailPhoto.addClass('invisible');
-        textPhoto.addClass('invisible');
     }
 });
 
@@ -240,8 +237,6 @@ function checkAuthorizationUser() {
 
         $('.form-review').removeClass('invisible');
         $('.ulogin').removeClass('invisible');
-        thumbnailPhoto.removeClass('invisible');
-        textPhoto.removeClass('invisible');
         $('.text-ulogin').removeClass('invisible');
 
         $('.text-auh').addClass('invisible');
